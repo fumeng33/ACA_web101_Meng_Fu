@@ -5,7 +5,7 @@ body {
     background-size: 1600px 1000px;
     width: 100vw;
     height: 100vh;
-    background-color:thistle;
+    background-color: black;
   }
   /* What kind of selector is this? */
   .logo {
@@ -39,13 +39,13 @@ body {
     background: transparent;
     padding: 20px;
     text-align: center;
-    border: 2px solid white;
+    border: bold 5px solid black;
   }
 
   .has-border {
     border-radius: 25px;
     border: 2px solid #0795C3;
-    background: none;
+    background: yellow;
     padding: 20px;
   }
 
