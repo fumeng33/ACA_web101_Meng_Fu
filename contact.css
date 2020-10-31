@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding:0;
+}
+body{
+  font-family: 'kavivanar', cursive;
+  background: url(./balloons.jpg);
+  background-size: cover;
+  height: auto;
+  color: rgb(49, 63, 189);
+}
+
+.container{ 
+  margin: 50px auto;
+  height: 650px;
+  width: 800px;
+  background: white;
+  box-sizing: border-box;
+  padding: 20px;
+}
+ul{
+  list-style: none;
+  padding:0;
+}
+.title{
+  text-align: center;
+}
+.personal-info,h2 .personal-info ul{
+  text-align: center;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  text-align:center;
+  margin: 10px 0;
+  border-style: solid;
+}
+
+.contact text{
+  height: 50px;
+}
+.email {  
+  height: 50px;
+}
+.subject text{
+  height: 100px;
+}
+.msg textarea{
+  height: 200px;
+}

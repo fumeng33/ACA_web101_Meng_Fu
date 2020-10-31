@@ -1,32 +1,131 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+
+}
 .animate__animated{
   text-align: center;
   padding: 40px;
-  background-color:lightgreen;
+  /* background-color:lightgreen; */
 }
-.row {
+/* h1 {
+  display: ;
+} */
+.image-rows {
   display:flex;
-  flex-wrap: wrap;
-  padding: 0 3px
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  transition: all 500ms ease-in;
+
+  /* grid-template-rows: repeat(3,1fr); */
+  /* flex-wrap: wrap; */
+  /* padding: 0 3px */
 }
-.column{
-  flex:20%;
-  max-width: 25%;  
-  padding:2 5px;
+.row{
+  display: flex;
+  height: 30%;
+  gap: 10px
+  /* padding:2 5px; */
 }
-.column img {
-  margin-top: 20px;
-  vertical-align:middle;
-  width: 90%;
+.one {
+  display: flex;
+
+}
+.two {
+  display: flex;
+
+}
+.three { 
+  display: flex;
+
+}
+img {
+  height: 200px;
+  /* margin-top: 20px; */
+  /* vertical-align:middle; */
+  /* width: 90%; */
+}
+/* img:hover {
+cursor: pointer;
+} */
+
+/* row 1 */
+.gallery-image1{
+  flex: 2;
+}
+.gallery-image2{
+  flex: 1;
+}
+.gallery-image3{
+  flex: 2;
+}
+.gallery-image4{
+  flex: 2;
+
+}
+.gallery-image5{
+  flex: 1;
+}
+/* row 2 */
+.gallery-image6{
+  flex: 3;
+}
+.gallery-image7{
+  flex: 2;
+}
+.gallery-image8{
+  flex: 1;
+}
+.gallery-image9{
+  flex: 3;
 }
 
-.gallery-image1{
-  background-image: url(https://source.unsplash.com/1600x900/?nature,water?sig=12);
+/* row 3 */
+.gallery-image10{
+  flex: 2;
+
+}
+.gallery-image11{
+  flex: 1;
+
+}
+.gallery-image12{
+  flex: 2;
+
+}
+.gallery-image13{
+  flex: 2;
+
+}
+.gallery-image14{
+  flex: 2;
+
+}
+.image-container {
+  position: relative;
+
+}
+.caption {
+  display: none;
 }
 
-.gallery-image1{
-  background-image: url(https://source.unsplash.com/1600x900/?nature,water?sig=123);
+.image-container:hover .caption {
+  background-color: black;
+  position: absolute;
+  top: 0; 
+  right: 0;
+  left: 0;
+  bottom: 0; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: .9em;
 }
-@media screen and (max-width:800px){
+
+
+@media screen and (max-width:1440px){
   .column{
     flex: 50%;
     max-width: 50%;
