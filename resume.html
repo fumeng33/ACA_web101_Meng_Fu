@@ -5,27 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume</title>
   <link href="https://fonts.googleapis.com/css2?family=Mali:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <script src="./resume-interactive.js"></script>
   <link rel="stylesheet" href="./resumeStyles.css">
 </head>
 
 <body>
   <div class="container">
     <div class="header">
-      <h1>Sadie Robertson</h1>
-      <h2>SPEAKER</h2>
+      <div class="headerone">
+        <h1 onclick="textColor()" id="title">Sadie Robertson</h1>
+      </div>
+      <div class="headertwo">
+        <h2>SPEAKER</h2>
+      </div>
     </div>
 
     <div class="image-row">
       <div class="profile">
-      <h2>Profile</h2>
+        <h2>PROFILE</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua.</p>
+          magna aliqua.</p>
       </div>
-      <div class="grid-item"><img src="./Sadie.jpg" class="small" alt="photo of Sadie"></div>
+      <div class="grid-item">
+        <img onmousedown="fadeOut()" onmouseup="fadeIn()" src="./Sadie.jpg" class="small" alt="photo of Sadie"
+          id="picture"></div>
       <div class="reach-me">
-      <h2>REACH ME</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. </p>
+        <h2>REACH ME</h2>
+        <p onclick="callMeFunction()" class="phone" id="cellphone" >Phone:434-343-5325</p> 
+        <div id="callMe"></div>
+        <p>Email:Sadie@liveorginal.com Blog:www.liveorginal.com Podecast: WHAO </p>
       </div>
     </div>
 
@@ -34,7 +43,7 @@
         <h2>EDUCATION</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. </p>
-        </div>
+      </div>
       <div class="skills">
         <h2>SKILLS</h2>
         <p>Public Speaker</p>
@@ -49,7 +58,6 @@
       </div>
     </div>
 
-    <div>
       <div class="experience">
         <div class="bottom-title">
           <h2>EXPERIENCE</h2>
@@ -60,18 +68,17 @@
             <h3>January 2018-2020</h3>
             <p>ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
               magna aliqua.</p>
-         </div>
+          </div>
 
           <div class="grid-item">
             <h3>September 2025-Present</h3>
             <p>ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
         </div>
 
       </div>
 
-    </div>
   </div>
 </body>
 

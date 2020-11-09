@@ -125,16 +125,12 @@ cursor: pointer;
 
 @media screen and (max-width: 900px){
   .row{
-    /* border: 5px solid red; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
     margin-left: 200px;
   }
-  /* img{
-    width: 350px;
-  } */
+  
   .image-rows{
     display: flex;
     width: 500px;
